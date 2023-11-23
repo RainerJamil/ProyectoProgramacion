@@ -80,10 +80,35 @@ public class Inicio {
                     }while (opcion2!=5);
                     break;
                 case 3:
-                    personaService.editarPersona();
-                    break;
-                default:
-                    break;
+                    Scanner case3 =new Scanner(System.in);
+                    int opcion3=0;
+                    do{
+                        System.out.println("-----------------");
+                        System.out.println("Aplicacion de Finanzas Personales");
+                        System.out.println("1.- Crear Categoria");
+                        System.out.println("2.- Listar Categoria");
+                        System.out.println("3.- Editar Categoria");
+                        System.out.println("4.- Eliminar Categoria");
+                        System.out.println("5.- Salir");
+                        System.out.print(">>");
+                        opcion3= sc.nextInt();
+                        switch (opcion3){
+                            case 1:
+                                categoriaService.crearCategoria();
+                                break;
+                            case 2:
+                                categoriaService.listarCategria();
+                                break;
+                            case 3:
+                                categoriaService.editarPresupuesto();
+                                break;
+                            case 4:
+                                categoriaService.borrarCategoria();
+                                break;
+                            default:
+                                break;
+                        }
+                    }while (opcion3!=5);
             }
         }while (opcion!=4);
     }
