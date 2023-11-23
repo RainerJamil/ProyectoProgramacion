@@ -79,7 +79,7 @@ public class Inicio {
                         }
                     }while (opcion2!=5);
                     break;
-                case 3:
+                case 3://flash puta jajajajaja
                     Scanner case3 =new Scanner(System.in);
                     int opcion3=0;
                     do{
