@@ -18,7 +18,7 @@ public class personaService {
         person.setApellido2(Apellido2);
         personaDAO.crearPersonaDB(person);
     }
-    public static void listarPerson(){
+    public static void listarPersona(){
 
     }
     public static void borrarPersona(){
